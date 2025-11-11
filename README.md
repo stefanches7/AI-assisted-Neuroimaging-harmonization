@@ -16,6 +16,10 @@ In this proof-of-concept, we aim to determine whether a coordinated system of AI
 
 If successful, Open Data BIDSifier will serve as a foundation for an AI agent that can identify and harmonize different datasets from open data, making sure these are immediately usable for machine learning and statistical analysis.
 
+## End deliverable
+
+If successful, the developed data harmonizer tool will be published as a Python executable, as well as a [HuggingFace space](https://huggingface.co/spaces).
+
 ## Tools and Structure 
 
 We will use this repository (https://github.com/stefanches7/AI-assisted-Neuroimaging-harmonization) as an intermittant commit place. Please, make yourself familiar with Git and Github. [This intro](https://docs.github.com/de/get-started/start-your-journey/hello-world) can be useful for that.
@@ -40,8 +44,9 @@ Suggestions smaller LLMs: SmoLM, LLaMA-7B, Qwen-7B
 ### Coding & Vibe Coding
 
 We will use **Python** to code. I recommend using **Anaconda** package manager as a tool to manage the Python package environments. If you are not sure what the previous 2 sentences really mean, I recommend [reading this intro to Python & Conda](https://www.anaconda.com/topics/choosing-between-anaconda-vs-python#:~:text=Anaconda%20is%20a%20distribution%20that,machine%20learning%2C%20and%20scientific%20computing.)
+Use your local IDE + Github repository clone to collaborate, and [Google collab space](https://colab.research.google.com/drive/15AG1HpdTtwVgmnihxZRLoKEZu2Q6ChU9?usp=sharing) if the local setup fails for some reason.
 
-LLMs can assist in writing code, but can also prove counterproductive and write bad (spaghetti), duplicated and erroneous code. It is instructful to be able check their output and correct it manually.
+**NB! LLMs can assist in writing code, but can also prove counterproductive and write bad (spaghetti), duplicated and erroneous code**. It is instructful to be able check their output and correct it manually.
 
 ## Rough Work Plan
 
@@ -91,6 +96,13 @@ Time planned: ~3 hours.
 ### 3. Try in action
 
 Use [ResEncL](https://huggingface.co/AnonRes/ResEncL-OpenMind-MAE) or another model of your choice with JAX, and feed it the resulting harmonized dataset. Analyse and record the bugs. 
+
+Work tasks here:
+
+1. Data loading ("Data Engineer")
+2. Running & evaluating the model ("AI Engineer")
+3. GUI Design and code for Python executable ("UX Designer")
+4. GUI Design and code for HuggingFace space ("UX Designer")
 
 Time planned: ~4 hours.
 
