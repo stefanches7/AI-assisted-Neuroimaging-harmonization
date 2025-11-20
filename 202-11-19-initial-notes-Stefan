@@ -1,0 +1,15 @@
+- metadata in JSON
+
+- fMRI to BIDS, MEG BIDS
+	- python package MEG to BIDS
+
+- dcm2nifti creates some metadata
+	- maybe use it downstream
+
+- BIDS
+	- created by OpenfMRI / OpenNeuro?
+	- data files organized by subjects
+	- participants both in json and tsv?
+	- nibits, some tools fill participants.tsv, dataset.json
+
+	- derivatives, source data
