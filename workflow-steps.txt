@@ -1,0 +1,10 @@
+
+- dataset.json
+- keep CITATION.cff or create new
+- keep LICENSE.txt or create new
+- directories moving structure
+- BIDS validator
+
+(optional) - participants.tsv
+(optional) - scan-level annotation
+(optional) - modality-specific files
