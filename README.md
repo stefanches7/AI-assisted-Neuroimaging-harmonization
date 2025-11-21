@@ -1,3 +1,14 @@
+---
+title: OpenBIDSifier - convert Neuroimaging metadata and folder structure to BIDS format.
+emoji: 🗃️
+colorFrom: pink
+colorTo: indigo
+sdk: gradio
+sdk_version: "5.49.1"
+app_file: gradio-ui.py
+pinned: false
+---
+
 #  Open Data BIDSifier: LLM-based BIDSifier and metadata harmonization for non-BIDS datasets
 
 This is the repository for an exploratory project Open Data BIDSifier, inspired by the accelerating progress of LLMs and their potential to automate format conversion for multi-study neuroimaging and clinical datasets.
