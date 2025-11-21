@@ -6,3 +6,6 @@ testing_structure.xml
 .env
 __pycache__/
 .venv/
+
+## Do not commit .pdf, as they incompatible with HF Spaces
+*.pdf
