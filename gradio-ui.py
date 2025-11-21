@@ -394,14 +394,15 @@ with gr.Blocks(
             lines=1,
             type="password",
         )
+    with gr.Row():
         dataset_xml_input = gr.Textbox(
-            label="Dataset XML",
-            placeholder="Paste dataset_structure.xml content here (optional)",
+            label="Dataset tree structure",
+            placeholder="Paste tree structure of the dataset, preferably in XML format (optional)",
             lines=8,
         )
         readme_input = gr.Textbox(
             label="README",
-            placeholder="Paste README.md content here (optional)",
+            placeholder="Paste relevant dataset description, and usage info if present (optional)",
             lines=8,
         )
 
