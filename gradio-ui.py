@@ -594,10 +594,31 @@ with gr.Blocks(
         outputs=[llm_output_box, commands_box, last_state, progress_bar],
     )
 
+    # Show uploaded file content in the textbox.
+    def _load_dataset_xml(file_path: Optional[str]) -> str:
+        if not file_path:
+            return ""
+        try:
+            return Path(file_path).read_text(encoding="utf-8", errors="ignore")
+        except Exception as e:
+            return f"Failed to read file: {e}"
+
+    dataset_xml_file.change(
+        fn=_load_dataset_xml,
+        inputs=[dataset_xml_file],
+        outputs=[dataset_xml_input],
+    )
+
     confirm_button.click(
         fn=confirm_commands,
         inputs=[last_state, progress_bar],
-        outputs=[status_msg, progress_bar],
+        outputs=[llm_output_box, commands_box, last_state, progress_bar, step_dropdown, status_msg],
+    )
+
+    run_commands_button.click(
+        fn=run_commands,
+        inputs=[last_state, progress_bar],
+        outputs=[status_msg, progress_bar, step_dropdown],
     )
 
     bids_validator_button.click(
