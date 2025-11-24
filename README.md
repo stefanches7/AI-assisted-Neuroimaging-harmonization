@@ -7,6 +7,7 @@ sdk: gradio
 sdk_version: "5.49.1"
 app_file: gradio-ui.py
 pinned: false
+license: apache-2.0
 ---
 
 #  Open Data BIDSifier: LLM-based BIDSifier and metadata harmonization for non-BIDS datasets
